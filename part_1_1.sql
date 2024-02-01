@@ -1,3 +1,4 @@
+-- Active: 1706539774613@@127.0.0.1@32768@app_auth
 CREATE TABLE user_table (
     user_id SERIAL PRIMARY KEY, 
     firstname VARCHAR(255), 
@@ -5,27 +6,17 @@ CREATE TABLE user_table (
     email VARCHAR(255) UNIQUE, 
     username VARCHAR(255) UNIQUE CHECK (length(username) > 8), 
     password VARCHAR(255) CHECK (length(password) > 8), 
-    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 );
 
 CREATE TABLE user_email_verification_table (
     uev_id SERIAL PRIMARY KEY, 
-    user_id INTEGER REFERENCES,
-    user_table (user_id), 
+    user_id INTEGER REFERENCES user_table (user_id), 
     verified_at TIMESTAMP
 );
 
 CREATE TABLE session_table (
     session_id SERIAL PRIMARY KEY, 
     user_id INTEGER REFERENCES user_table (user_id), 
-    connected_at TIMESTAMP,
+    connected_at TIMESTAMP
 );
-
-ALTER TABLE user_table
-ADD CONSTRAINT username_length_constraint CHECK (length(username) > 8);
-
-ALTER TABLE user_table
-ADD CONSTRAINT email_length_constraint CHECK (length(email) > 8);
-
-ALTER TABLE user_table
-ADD CONSTRAINT password_length_constraint CHECK (length(password) > 8);
