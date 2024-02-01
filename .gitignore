@@ -1,1 +1,5 @@
-/env/
+# Ignored folders
+env/
+
+# Ignored folders
+**.env**
