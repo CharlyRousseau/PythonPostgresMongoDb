@@ -1,4 +1,3 @@
--- Active: 1706539774613@@127.0.0.1@32768@app_auth
 CREATE VIEW session_and_user AS
 SELECT
    session_table.session_id,

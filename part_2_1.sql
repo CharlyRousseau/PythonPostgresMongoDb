@@ -1,4 +1,3 @@
--- Active: 1706536086604@@127.0.0.1@5432@app_auth
 CREATE TABLE subscription_table (
     subscription_id SERIAL PRIMARY KEY,
     subscribed_at DATE CHECK (subscribed_at BETWEEN '2023-01-01' AND '2023-06-30'),

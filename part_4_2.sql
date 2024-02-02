@@ -1,4 +1,3 @@
--- Active: 1706539774613@@127.0.0.1@32768@app_auth
 CREATE TABLE username_history (
     username_history_id SERIAL PRIMARY KEY, user_id INTEGER, username_new VARCHAR(255), timestamp TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 );

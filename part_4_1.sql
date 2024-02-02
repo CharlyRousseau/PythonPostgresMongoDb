@@ -1,4 +1,3 @@
--- Active: 1706539774613@@127.0.0.1@32768@app_auth
 CREATE TABLE session_count (
     session_count_id SERIAL PRIMARY KEY, 
     user_id INTEGER UNIQUE, 
