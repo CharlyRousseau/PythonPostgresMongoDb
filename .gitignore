@@ -2,5 +2,5 @@
 env/
 
 # Ignored folders
- *.env
+*.env
 settings.json
