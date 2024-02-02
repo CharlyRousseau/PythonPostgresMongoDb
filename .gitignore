@@ -1,5 +1,6 @@
 # Ignored folders
 env/
+.vscode/
 
 # Ignored folders
 *.env
