@@ -1,5 +1,7 @@
 # Ignored folders
 env/
+.vscode/
 
 # Ignored folders
-**.env**
+*.env
+settings.json
