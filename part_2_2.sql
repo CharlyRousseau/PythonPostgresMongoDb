@@ -1,4 +1,3 @@
--- Active: 1706536086604@@127.0.0.1@5432@app_auth
 CREATE VIEW subscription_per_plan_per_month AS
 SELECT 
     EXTRACT(MONTH FROM subscribed_at) AS month,

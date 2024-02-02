@@ -1,4 +1,3 @@
--- Active: 1706539774613@@127.0.0.1@32768@app_auth
 CREATE TABLE IF NOT EXISTS user_table (
     user_id SERIAL PRIMARY KEY, 
     firstname VARCHAR(255), 
