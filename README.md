@@ -27,14 +27,12 @@ Make sure to set the following environment variables:
 MONGO_DB_USER = <user>
 MONGO_DB_PASSWORD = <password>
 MONGO_DB_PORT = <port>
-MONGO_DB_NAME = <database>
-MONGO_DB_HOST = <hostname>
+
 # PostGreSQL local
 POSTGRESQL_LOCAL_USER = <user>
 POSTGRESQL_LOCAL_PASSWORD = <password>
 POSTGRESQL_LOCAL_PORT = <port>
-POSTGRESQL_LOCAL_DB_NAME = <database>
-POSTGRESQL_LOCAL_HOST = <host>
+
 # PostGreSQL x Scalingo
 POSTGRESQL_SCALINGO_URL = <url>
 ```
@@ -74,7 +72,7 @@ deactivate
 
 Enjoy !
 
-### Linux
+### Linux / MacOS
 
 You'll need [PyEnv for Linux](https://ggkbase-help.berkeley.edu/how-to/install-pyenv/).
 
